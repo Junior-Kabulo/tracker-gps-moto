@@ -5,13 +5,13 @@ A connected GPS tracker designed for motorcycles (moto-taxis and private owners)
 > Personal electronics design project: system architecture, component selection, schematics and PCB layout done in **KiCad 10**; fabrication and assembly by **JLCPCB**.
 > Design files (schematics, PCB, manufacturing files) are not published; this repository showcases the project through images.
 
-![RF board — 3D view](images/rf_3d.png)
+![Full assembly — Power board stacked on the RF board](images/assembly_3d.png)
 
 ---
 
 ## Architecture
 
-The tracker is made of **two stacked boards** connected through 2.54 mm headers:
+The tracker is made of **two stacked boards** connected through 2.54 mm headers (Power board mounted upside down on top of the RF board, as shown above):
 
 | Board | Size | Layers | Role |
 |---|---|---|---|
@@ -40,6 +40,7 @@ Splitting power and radio lets each block be tested and revised independently, a
 - ESD protection on SIM, USB and exposed lines
 - Double-sided assembly
 
+![RF board — 3D view](images/rf_3d.png)
 ![RF board — top](images/rf_top.png)
 ![RF board — bottom](images/rf_bottom.png)
 
